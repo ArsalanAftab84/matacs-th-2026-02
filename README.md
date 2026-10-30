@@ -6,19 +6,9 @@
 
 ---
 
-## Repository Files & Deliverables
-
-* **[`diagram/flow.png`](./diagram/flow.png)** — Process-flow diagram from PDF upload to ranked output, clearly distinguishing AI steps, deterministic rule-based steps, and human-in-the-loop checkpoints.
-* **[`WRITEUP.md`](./writeup.md)** — Concise architectural write-up answering all five design questions (580 words; strictly under the 1,000-word limit).
-* **[`PROMPTS.md`](./PROMPTS.md)** — Exact system and user prompts used for schema-driven fact extraction, prompt-injection detection, and one-line rationale generation.
-* **[`ranking.json`](./ranking.json)** — Final evaluation output for sample proposals A–E following the strict JSON schema and status rules (`ranked`, `flagged`, `ineligible`).
-
----
----
-
 ## AI Use and Guidelines
 
-I used an AI assistant for roughly 50–60% of the workflow to help draft the boilerplate Python prototype, structure the JSON extraction schemas, and refine the wording in `WRITEUP.md`, while I manually designed the core triage architecture, scoring rubric, and edge-case handling (such as catching Proposal B's unconfirmed subcontractor, Proposal C's prompt injection, and Proposal D's missing timeline). 
+I used an AI assistant for roughly 50–60% of the workflow to structure the JSON extraction schemas, and refine the wording in `WRITEUP.md`, while I manually designed the core triage architecture, scoring rubric, and edge-case handling (such as catching Proposal B's unconfirmed subcontractor, Proposal C's prompt injection, and Proposal D's missing timeline). 
 
 ---
 
@@ -31,3 +21,13 @@ In accordance with the assessment guidelines, AI tools (Google Gemini) were used
 
 ---
 
+---
+
+## Repository Files & Deliverables
+
+* **[`diagram/flow.png`](./diagram/flow.png)** — Process-flow diagram from PDF upload to ranked output, clearly distinguishing AI steps, deterministic rule-based steps, and human-in-the-loop checkpoints.
+* **[`WRITEUP.md`](./writeup.md)** — Concise architectural write-up answering all five design questions (580 words; strictly under the 1,000-word limit).
+* **[`PROMPTS.md`](./PROMPTS.md)** — Exact system and user prompts used for schema-driven fact extraction, prompt-injection detection, and one-line rationale generation.
+* **[`ranking.json`](./ranking.json)** — Final evaluation output for sample proposals A–E following the strict JSON schema and status rules (`ranked`, `flagged`, `ineligible`).
+
+---
